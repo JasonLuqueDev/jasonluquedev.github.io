@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jason — Arquiteto Payroll Control Center</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+    body { font-family: 'Inter', system-ui, sans-serif; }
+    .hero-bg { background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('https://picsum.photos/id/1015/2000/1200') center/cover no-repeat; }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- NAVBAR -->
+  <nav class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="#" class="text-2xl font-bold tracking-tight">Jason Luque</a>
+      <div class="flex gap-8 text-sm font-medium">
+        <a href="#sobre" class="hover:text-blue-600 transition">Sobre</a>
+        <a href="#habilidades" class="hover:text-blue-600 transition">Habilidades</a>
+        <a href="#experiencia" class="hover:text-blue-600 transition">Experiência</a>
+        <a href="#projetos" class="hover:text-blue-600 transition">Projetos</a>
+        <a href="#contato" class="hover:text-blue-600 transition">Contato</a>
+      </div>
+      <div>
+        <a href="#" onclick="window.open('SEU_CV.pdf')" 
+           class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2.5 rounded-xl text-sm font-medium transition flex items-center gap-2">
+          <i class="fas fa-download"></i> Baixar CV
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header id="home" class="hero-bg text-white py-32">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+      <div class="space-y-6">
+        <div class="inline-flex items-center gap-2 bg-white/20 backdrop-blur-md px-4 py-2 rounded-3xl text-sm">
+          <span class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></span>
+          Disponível para novos desafios
+        </div>
+        <h1 class="text-5xl md:text-6xl font-bold leading-tight">
+          Jason<br>
+          <span class="text-blue-400">Arquiteto Payroll Control Center</span>
+        </h1>
+        <p class="text-xl text-gray-200">
+          Especialista em SAP SuccessFactors EC Payroll • Arquitetura de Processos • Governança • Integrações Estratégicas
+        </p>
+        <div class="flex gap-4">
+          <a href="#contato" class="bg-white text-blue-700 hover:bg-gray-100 px-8 py-4 rounded-2xl font-semibold text-lg transition flex items-center gap-3">
+            Fale comigo <i class="fas fa-arrow-right"></i>
+          </a>
+          <a href="#" onclick="window.open('SEU_CV.pdf')" 
+             class="border-2 border-white/70 hover:border-white px-8 py-4 rounded-2xl font-semibold text-lg transition">
+            Baixar CV completo
+          </a>
+        </div>
+      </div>
+      <div class="flex justify-center">
+        <div class="w-80 h-80 bg-white rounded-3xl shadow-2xl overflow-hidden border-8 border-white">
+          <img src="https://media.licdn.com/dms/image/v2/D4D03AQFmt5TDDfTDnA/profile-displayphoto-crop_800_800/B4DZvCUByeJoAM-/0/1768491589300?e=1780531200&v=beta&t=gY_nPUhMPWrApsU1cPL3mk115YsX5aDmLjhyU2OSppk" alt="Foto de perfil" class="w-full h-full object-cover">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- SOBRE + INFORMAÇÕES BÁSICAS -->
+  <section id="sobre" class="max-w-6xl mx-auto px-6 py-20">
+    <div class="grid md:grid-cols-2 gap-16">
+      <div>
+        <h2 class="text-3xl font-bold mb-6">Sobre mim</h2>
+        <p class="text-lg text-gray-600 leading-relaxed">
+          Arquiteto de soluções com mais de 8 anos de experiência em <strong>Payroll Control Center (SAP SuccessFactors)</strong>. 
+          Especializado na concepção, governança e otimização de processos end-to-end de folha de pagamento, com foco em alta escalabilidade, compliance e automação inteligente.
+        </p>
+        <p class="text-lg text-gray-600 leading-relaxed mt-4">
+          Atuo como referência técnica em projetos globais, liderando a arquitetura de regras de validação, alertas proativos, KPIs em tempo real e integrações estratégicas com Employee Central, ECP, FI/CO e sistemas legados.
+        </p>
+      </div>
+
+      <div class="bg-white rounded-3xl shadow p-8">
+        <h2 class="text-3xl font-bold mb-6">Informações Básicas</h2>
+        <div class="space-y-6">
+          <div class="flex justify-between border-b pb-4"><span class="font-medium">Localização</span><span class="text-gray-600">Mairinque, SP – Brasil</span></div>
+          <div class="flex justify-between border-b pb-4"><span class="font-medium">Email</span><span class="text-gray-600">[seu@email.com]</span></div>
+          <div class="flex justify-between border-b pb-4"><span class="font-medium">Telefone / WhatsApp</span><span class="text-gray-600">(11) 99999-9999</span></div>
+          <div class="flex justify-between border-b pb-4"><span class="font-medium">Idiomas</span><span class="text-gray-600">Português (nativo) • Inglês (avançado)</span></div>
+          <div class="flex justify-between"><span class="font-medium">LinkedIn</span><a href="#" class="text-blue-600 hover:underline">linkedin.com/in/seu-perfil</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HABILIDADES -->
+  <section id="habilidades" class="bg-white py-20">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12">Habilidades Técnicas – Nível Arquiteto</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="space-y-8">
+          <div>
+            <div class="flex justify-between text-sm mb-2"><span class="font-medium">Payroll Control Center (PCC)</span><span class="text-emerald-600">Expert</span></div>
+            <div class="h-2 bg-gray-200 rounded-full"><div class="w-[95%] h-2 bg-emerald-500 rounded-full"></div></div>
+          </div>
+          <div>
+            <div class="flex justify-between text-sm mb-2"><span class="font-medium">SAP SuccessFactors EC Payroll</span><span class="text-emerald-600">Expert</span></div>
+            <div class="h-2 bg-gray-200 rounded-full"><div class="w-[92%] h-2 bg-emerald-500 rounded-full"></div></div>
+          </div>
+          <div>
+            <div class="flex justify-between text-sm mb-2"><span class="font-medium">Regras de Validação & Alertas</span><span class="text-emerald-600">Expert</span></div>
+            <div class="h-2 bg-gray-200 rounded-full"><div class="w-[90%] h-2 bg-emerald-500 rounded-full"></div></div>
+          </div>
+        </div>
+        <div class="space-y-8">
+          <div>
+            <div class="flex justify-between text-sm mb-2"><span class="font-medium">Integrações EC → ECP / FI-CO</span><span class="text-blue-600">Avançado</span></div>
+            <div class="h-2 bg-gray-200 rounded-full"><div class="w-[88%] h-2 bg-blue-500 rounded-full"></div></div>
+          </div>
+          <div>
+            <div class="flex justify-between text-sm mb-2"><span class="font-medium">KPIs e Dashboards em Tempo Real</span><span class="text-blue-600">Avançado</span></div>
+            <div class="h-2 bg-gray-200 rounded-full"><div class="w-[85%] h-2 bg-blue-500 rounded-full"></div></div>
+          </div>
+          <div>
+            <div class="flex justify-between text-sm mb-2"><span class="font-medium">SAP CPI / Integration Suite</span><span class="text-blue-600">Avançado</span></div>
+            <div class="h-2 bg-gray-200 rounded-full"><div class="w-[80%] h-2 bg-blue-500 rounded-full"></div></div>
+          </div>
+        </div>
+        <div class="space-y-8">
+          <div>
+            <div class="flex justify-between text-sm mb-2"><span class="font-medium">Governança e Compliance de Folha</span><span class="text-purple-600">Expert</span></div>
+            <div class="h-2 bg-gray-200 rounded-full"><div class="w-[94%] h-2 bg-purple-500 rounded-full"></div></div>
+          </div>
+          <div>
+            <div class="flex justify-between text-sm mb-2"><span class="font-medium">Automação de Processos (RPA + PCC)</span><span class="text-purple-600">Avançado</span></div>
+            <div class="h-2 bg-gray-200 rounded-full"><div class="w-[82%] h-2 bg-purple-500 rounded-full"></div></div>
+          </div>
+          <div>
+            <div class="flex justify-between text-sm mb-2"><span class="font-medium">Arquitetura de Soluções HCM</span><span class="text-purple-600">Expert</span></div>
+            <div class="h-2 bg-gray-200 rounded-full"><div class="w-[90%] h-2 bg-purple-500 rounded-full"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIÊNCIA -->
+  <section id="experiencia" class="max-w-6xl mx-auto px-6 py-20 bg-gray-50">
+    <h2 class="text-3xl font-bold text-center mb-12">Experiência Profissional</h2>
+    <div class="space-y-12">
+      <!-- Experiência 1 -->
+      <div class="bg-white rounded-3xl p-8 shadow">
+        <div class="flex flex-col md:flex-row justify-between mb-4">
+          <div>
+            <h3 class="font-semibold text-xl">Arquiteto de Payroll Control Center</h3>
+            <p class="text-blue-600">Empresa Global de Tecnologia • 2023 – Presente</p>
+          </div>
+          <p class="text-gray-500">2 anos</p>
+        </div>
+        <ul class="list-disc pl-5 space-y-2 text-gray-600">
+          <li>Arquitetura completa do Payroll Control Center para +18 mil colaboradores em 7 países.</li>
+          <li>Redução de 45% no tempo de validação de folha através de regras avançadas e alertas proativos.</li>
+          <li>Liderança técnica de squad de 6 pessoas (arquitetos + devs) em projetos de integração EC → ECP → FI.</li>
+        </ul>
+      </div>
+
+      <!-- Experiência 2 -->
+      <div class="bg-white rounded-3xl p-8 shadow">
+        <div class="flex flex-col md:flex-row justify-between mb-4">
+          <div>
+            <h3 class="font-semibold text-xl">Senior Payroll Control Center Consultant 2</h3>
+            <p class="text-blue-600">Consultoria SAP • 2021 – 2023</p>
+          </div>
+          <p class="text-gray-500">2 anos</p>
+        </div>
+        <ul class="list-disc pl-5 space-y-2 text-gray-600">
+          <li>Desenho e implementação de mais de 120 regras de validação customizadas em PCC.</li>
+          <li>Implantação de KPIs em tempo real e dashboards de governança para C-level.</li>
+          <li>Padronização de processos de reconciliação e posting contábil automatizado.</li>
+        </ul>
+      </div>
+
+
+ <!-- Experiência 3 -->
+      <div class="bg-white rounded-3xl p-8 shadow">
+        <div class="flex flex-col md:flex-row justify-between mb-4">
+          <div>
+            <h3 class="font-semibold text-xl">Senior Payroll Control Center Consultant 2</h3>
+            <p class="text-blue-600">Consultoria SAP • 2021 – 2023</p>
+          </div>
+          <p class="text-gray-500">2 anos</p>
+        </div>
+        <ul class="list-disc pl-5 space-y-2 text-gray-600">
+          <li>Desenho e implementação de mais de 120 regras de validação customizadas em PCC.</li>
+          <li>Implantação de KPIs em tempo real e dashboards de governança para C-level.</li>
+          <li>Padronização de processos de reconciliação e posting contábil automatizado.</li>
+        </ul>
+      </div>
+
+
+ <!-- Experiência 3 -->
+      <div class="bg-white rounded-3xl p-8 shadow">
+        <div class="flex flex-col md:flex-row justify-between mb-4">
+          <div>
+            <h3 class="font-semibold text-xl">Senior Payroll Control Center Consultant 2</h3>
+            <p class="text-blue-600">Consultoria SAP • 2021 – 2023</p>
+          </div>
+          <p class="text-gray-500">2 anos</p>
+        </div>
+        <ul class="list-disc pl-5 space-y-2 text-gray-600">
+          <li>Desenho e implementação de mais de 120 regras de validação customizadas em PCC.</li>
+          <li>Implantação de KPIs em tempo real e dashboards de governança para C-level.</li>
+          <li>Padronização de processos de reconciliação e posting contábil automatizado.</li>
+        </ul>
+      </div>
+ </section>
+
+
+  
+
+  
+
+  <!-- PROJETOS / IMPLEMENTAÇÕES CHAVE -->
+  <section id="projetos" class="max-w-6xl mx-auto px-6 py-20">
+    <h2 class="text-3xl font-bold text-center mb-12">Principais Projetos e Arquiteturas</h2>
+    <div class="grid md:grid-cols-2 gap-8">
+      <div class="bg-white p-8 rounded-3xl shadow">
+        <h4 class="font-semibold mb-3">Payroll Control Center Global – Multinacional (2024)</h4>
+        <p class="text-gray-600">Arquitetura end-to-end para 42 mil colaboradores. Redução de 62% em erros de folha e 100% de rastreabilidade via alertas inteligentes.</p>
+      </div><div class="bg-white p-8 rounded-3xl shadow">
+        <h4 class="font-semibold mb-3">Payroll Control Center Global – Multinacional (2024)</h4>
+        <p class="text-gray-600">Arquitetura end-to-end para 42 mil colaboradores. Redução de 62% em erros de folha e 100% de rastreabilidade via alertas inteligentes.</p>
+      </div><div class="bg-white p-8 rounded-3xl shadow">
+        <h4 class="font-semibold mb-3">Payroll Control Center Global – Multinacional (2024)</h4>
+        <p class="text-gray-600">Arquitetura end-to-end para 42 mil colaboradores. Redução de 62% em erros de folha e 100% de rastreabilidade via alertas inteligentes.</p>
+      </div><div class="bg-white p-8 rounded-3xl shadow">
+        <h4 class="font-semibold mb-3">Payroll Control Center Global – Multinacional (2024)</h4>
+        <p class="text-gray-600">Arquitetura end-to-end para 42 mil colaboradores. Redução de 62% em erros de folha e 100% de rastreabilidade via alertas inteligentes.</p>
+      </div><div class="bg-white p-8 rounded-3xl shadow">
+        <h4 class="font-semibold mb-3">Payroll Control Center Global – Multinacional (2024)</h4>
+        <p class="text-gray-600">Arquitetura end-to-end para 42 mil colaboradores. Redução de 62% em erros de folha e 100% de rastreabilidade via alertas inteligentes.</p>
+      </div>
+      <div class="bg-white p-8 rounded-3xl shadow">
+        <h4 class="font-semibold mb-3">Integração EC → ECP + Posting FI-CO (2023)</h4>
+        <p class="text-gray-600">Projeto de alta complexidade com zero downtime. Implementação de regras de validação avançadas e automação total do fluxo de aprovação.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato" class="bg-gray-900 text-white py-20">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h2 class="text-4xl font-bold mb-6">Vamos conversar sobre seu próximo projeto de Payroll Control Center?</h2>
+      <p class="text-xl text-gray-300 mb-10">Estou disponível para arquitetura, consultoria ou liderança técnica.</p>
+      <a href="mailto:seu@email.com" class="inline-flex items-center gap-3 bg-blue-600 hover:bg-blue-700 text-white text-2xl font-semibold px-12 py-6 rounded-3xl transition">
+        <i class="fas fa-envelope"></i> Enviar mensagem
+      </a>
+    </div>
+  </section>
+
+  <footer class="bg-white py-8 text-center text-sm text-gray-500">
+    © 2026 Jason • Feito com foco total em Payroll Control Center
+  </footer>
+
+  <script>
+    // Tailwind script já carregado
+    console.log('%c✅ CV Payroll Control Center Arquiteto carregado com sucesso!', 'color:#0ea5e9; font-weight:700');
+  </script>
+</body>
+</html>
